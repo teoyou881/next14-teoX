@@ -1,9 +1,8 @@
 'use client';
 
-import style from '@/app/(beforeLogin)/@modal/i/flow/login/login.module.css';
+import style from '@/app/(beforeLogin)/@modal/(.)i/flow/login/login.module.css';
 import { ChangeEventHandler, FormEventHandler, useState } from 'react';
 import { redirect, useRouter } from 'next/navigation';
-// @ts-ignore
 import { signIn } from 'next-auth/react';
 
 export default function LoginModal() {
