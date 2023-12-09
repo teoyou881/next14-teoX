@@ -14,7 +14,7 @@ export default function Main() {
         <h2>Join today.</h2>
         <Link href='/i/flow/signup' className={styles.signup}>Create account</Link>
         <h3>Already have an account?</h3>
-        <Link href='/i/flow/login' className={styles.login}>Sign in</Link>
+        <Link href='/login' className={styles.login}>Sign in</Link>
       </div>
     </div>
   );

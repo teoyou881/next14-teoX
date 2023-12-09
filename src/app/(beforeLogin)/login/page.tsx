@@ -1,7 +1,12 @@
-import Main from "@/app/(beforeLogin)/_component/Main";
+'use client';
+
+import Main from '@/app/(beforeLogin)/_component/Main';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
-    return (
-        <Main />
-    )
+  const router = useRouter();
+  router.replace('/i/flow/login');
+  return (
+    <Main />
+  );
 }
