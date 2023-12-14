@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import tLogo from '@/../public/tLogo.png';
 import NavMenu from '@/app/(afterLogin)/_component/NavMenu';
+import LogOutButton from '@/app/(afterLogin)/_component/LogOutButton';
 
 export default function AfterLoginLayout({ children }: { children: ReactNode }) {
   return (
@@ -20,7 +21,9 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
               <ul>
                 <NavMenu />
               </ul>
+              <Link href='/compose/tweet' className={style.postButton}>Post</Link>
             </nav>
+            <LogOutButton />
           </div>
         </section>
       </header>
