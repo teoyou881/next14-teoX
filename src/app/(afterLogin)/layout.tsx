@@ -3,6 +3,7 @@ import style from '@/app/(afterLogin)/layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import tLogo from '@/../public/tLogo.png';
+import NavMenu from '@/app/(afterLogin)/_component/NavMenu';
 
 export default function AfterLoginLayout({ children }: { children: ReactNode }) {
   return (
@@ -15,7 +16,11 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                 <Image src={tLogo} alt='t.com logo' width={40} />
               </div>
             </Link>
-
+            <nav>
+              <ul>
+                <NavMenu />
+              </ul>
+            </nav>
           </div>
         </section>
       </header>
