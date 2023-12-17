@@ -16,7 +16,7 @@ export default function Tab() {
 
   return (
     <div className={style.homeFixed}>
-      <div className={style.homeText}>Home</div>
+      <div className={style.homeText}></div>
       <div className={style.homeTab}>
         <div onClick={onClickRec}>
           Recommend
