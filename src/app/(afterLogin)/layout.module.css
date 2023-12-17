@@ -13,13 +13,11 @@
 }
 
 .leftSection {
-    background: blue;
     width: 72px;
     height: 100dvh;
 }
 
 .leftSectionFixed {
-    background: aqua;
     position: fixed;
     width: inherit;
     padding: 0 8px;
@@ -142,7 +140,6 @@
 }
 
 .rightSection {
-    background: yellow;
     display: none;
 }
 
@@ -161,7 +158,6 @@
     }
 
     .rightSectionInner {
-        background: pink;
         width: 990px;
     }
 }
