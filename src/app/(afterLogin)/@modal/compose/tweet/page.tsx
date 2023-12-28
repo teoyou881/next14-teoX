@@ -13,7 +13,7 @@ export default function TweetModal() {
 
   const me = {
     id: 'Teo',
-    image: '/tLogo',
+    image: '/tLogo.png',
   };
 
   return (
