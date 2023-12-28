@@ -7,7 +7,8 @@ import Trend from './Trend';
 
 
 export default function TrendSection() {
-
+  let pathname = usePathname();
+  if (pathname == '/explore') return null;
   return (
     <div className={style.trendBg}>
       <div className={style.trend}>
