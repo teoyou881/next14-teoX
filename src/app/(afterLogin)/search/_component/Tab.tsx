@@ -32,7 +32,7 @@ export default function Tab() {
           <div className={style.tabIndicator} hidden={current !== 'top'}></div>
         </div>
         <div onClick={onClickLatest}>
-          latest
+          Latest
           <div className={style.tabIndicator} hidden={current !== 'latest'}></div>
         </div>
         <div onClick={onClickPeople}>
