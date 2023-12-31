@@ -1,6 +1,6 @@
 import style from './search.module.css';
 import Post from '@/app/(afterLogin)/_component/Post';
-import Tab from '@/app/(afterLogin)/home/_component/Tab';
+import Tab from '@/app/(afterLogin)/search/_component/Tab';
 import SearchForm from '@/app/(afterLogin)/_component/SearchForm';
 import BackButton from '@/app/(afterLogin)/_component/BackButton';
 
