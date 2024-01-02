@@ -5,12 +5,14 @@ import Link from 'next/link';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import ActionButtons from '@/app/(afterLogin)/_component/ActionButtons';
+import React, { ReactNode } from 'react';
+import PostArticle from './PostArticle';
 
 dayjs.extend(relativeTime);
-
 export default function Post() {
 
   const target = {
+    postId: 1,
     User: {
       id: 'test',
       nickname: 'test',
@@ -22,7 +24,7 @@ export default function Post() {
   };
 
   return (
-    <article className={style.post}>
+    <PostArticle post={target}>
       <div className={style.postWrapper}>
         <div className={style.postUserSection}>
           <Link href={`/${target.User.id}`} className={style.postUserImage}>
@@ -49,7 +51,7 @@ export default function Post() {
           <ActionButtons />
         </div>
       </div>
-    </article>
+    </PostArticle>
   );
 
 }
